@@ -1,0 +1,18 @@
+[package]
+name = "my-aapi"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3"
+actix-files = "0.5.0"
+serde = "1"
+bcrypt = "0.10.1"
+tokio-postgres = "0.7.5"
+thiserror = "1.0.30"
+
+[lib]
+name = "api"
+path = "src/lib/mod.rs"
